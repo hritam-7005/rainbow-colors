@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Handlee">
+</head>
+<body onload="setPos(), colorChangeNI()">
+    <div class="background">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+        <div class="circle c5"></div>
+        <div class="circle c6"></div>
+        <div class="circle c7"></div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+        <div class="circle c5"></div>
+        <div class="circle c6"></div>
+        <div class="circle c7"></div>
+    </div>
+    <div class="front-page">
+        <div class="title">Color Mixer</div>
+    </div>
+    <div class="box" id="box">
+        <div class="colors">
+            <div class="display" id="display"></div>
+            <div class="rgb" id="rgb">
+                <div class="rgb-slider">
+                    <p class="sp sp-a"><input type="range" step="1" class="slider aio" id="aio" oninput="colorChangeAio()"  max="255" min="0"></p>
+                    <p class="sp sp-r"><input type="range" step="1" class="slider red" id="red" oninput="colorChange()"  max="255" min="0"></p>
+                    <p class="sp sp-g"><input type="range" step="1" class="slider green" id="green" oninput="colorChange()"  max="255" min="0"></p>
+                    <p class="sp sp-b"><input type="range" step="1" class="slider blue" id="blue" oninput="colorChange()"  max="255" min="0"></p>
+                </div>
+                <div class="rgb-number">
+                    <div class="list">RGB</div>
+                    <input type="number" class="ti-r text-input" min="0" max="255" value="255" id="text-input-red" oninput="colorChangeNI()">
+                    <input type="number" class="ti-g text-input" min="0" max="255" value="255" id="text-input-green" oninput="colorChangeNI()">
+                    <input type="number" class="ti-b text-input" min="0" max="255" value="255" id="text-input-blue" oninput="colorChangeNI()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
